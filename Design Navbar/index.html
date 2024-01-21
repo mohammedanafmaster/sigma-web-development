@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --first-color: blue;
+            --first-bg-color: black;
+            --second-color: green;
+            --second-bg-color: gray;
+            --third-color: red;
+            --third-bg-color: yellow;
+            --fourth-color: orange;
+            --fourth-bg-color: purple; 
+        }
+
+        /* Desktop */
+        nav {
+            background-color: var(--first-bg-color);
+            color: var(--first-color);
+        }
+
+        nav > ul > li {
+            display: inline-block;
+            padding: 5px 15px;
+            font-size: 20px;
+        }
+
+        /* Laptop */
+        @media only screen and (max-width: 1439px) {
+            nav {
+                background-color: var(--second-bg-color);
+                color: var(--second-color);
+            }
+        }
+
+        /* Tablet */
+        @media only screen and (max-width: 1023px) {
+            nav {
+                background-color: var(--third-bg-color);
+                color: var(--third-color);
+            }
+        }
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            nav {
+                background-color: var(--fourth-bg-color);
+                color: var(--fourth-color);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
