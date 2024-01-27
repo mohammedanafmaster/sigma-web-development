@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar using Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            margin: 25px auto;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        ul > div:nth-child(2) {
+            display: flex;
+        }
+
+        ul > div:nth-child(2) > li {
+            margin: 0 20px;
+        }
+
+        ul li > a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        ul li > a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div>
+                    <li>
+                        <a href="#">
+                            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-white.webp"
+                                width="175" alt="Logo of the website">
+                        </a>
+                    </li>
+                </div>
+
+                <div>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./language-translation.png" width="25" alt="Translate the document">
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
