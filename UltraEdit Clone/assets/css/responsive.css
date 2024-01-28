@@ -1,0 +1,212 @@
+/* Laptop */
+@media only screen and (max-width: 1439px) {
+    #download-section {
+        margin: 50px 100px;
+    }
+
+    #download-section .content .col {
+        margin-bottom: 60px;
+    }
+
+    #download-section .content .button a {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    #subscribe-section .row .col:nth-child(2) {
+        width: 75%;
+    }
+
+    #subscribe-section .row .text p {
+        width: 75%;
+    }
+
+    #subscribe-section .content {
+        width: 90%;
+        margin: 100px auto 75px;
+    }
+
+    #subscribe-section .content p:nth-child(5) {
+        width: 100%;
+    }
+
+    footer .container {
+        margin: 100px 50px 50px;
+    }
+
+    footer .container .col button {
+        width: 85%;
+    }
+
+    footer .container .icons img {
+        margin: 0 10px 0 0;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1023px) {
+    header .logo img {
+        width: 135px;
+        height: 40px;
+    }
+
+    #hero-section .title > h1 {
+        width: 75%;
+        margin: 0 auto 30px;
+    }
+
+    #hero-section .title img {
+        display: none;
+    }
+
+    #hero-section .content p {
+        width: 90%;
+    }
+
+    #download-section {
+        margin: 30px auto;
+    }
+
+    #download-section .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #download-section .title {
+        margin-left: 40px;
+    }
+
+    #subscribe-section .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #subscribe-section .row .col:nth-child(2) {
+        width: 50%;
+        margin: 35px auto;
+    }
+
+    #subscribe-section .content {
+        margin: 75px auto;
+    }
+
+    footer .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .container {
+        margin: 100px 25px 50px;
+    }
+
+    footer .container .row .col:nth-child(1), footer .container .row .col:nth-child(2) {
+        margin-bottom: 25px;
+    }
+
+    footer .container .row:nth-child(2) {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 50px 0 0;
+    }
+
+    footer .container .row:nth-child(2) .col:first-child {
+        margin: 0 auto 25px;
+    }
+
+    footer .container .col input {
+        width: 85%;
+    }
+
+    footer .container p:nth-child(3) {
+        text-align: center;
+    }
+}
+
+/* Mobile L */
+@media only screen and (max-width: 767px) {
+    nav {
+        display: none;
+    }
+
+    #hero-section .title > h1 {
+        font-size: 35px;
+        width: 90%;
+    }
+
+    #hero-section .content > p {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    #download-section .title {
+        margin-left: 30px;
+    }
+
+    #download-section .text {
+        flex-direction: column;
+    }
+
+    #download-section .text h3 {
+        font-size: 20px;
+    }
+
+    #download-section .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #download-section .content .text {
+        margin-bottom: 30px;
+    }
+
+    #download-section .content .button a {
+        display: inline;
+    }
+
+    #subscribe-section .row .text h5, #subscribe-section .row form h5, #subscribe-section .content h6 {
+        font-size: 20px;
+    }
+
+    #subscribe-section .row .text p {
+        width: 80%;
+    }
+
+    #subscribe-section .row .col:nth-child(2) {
+        width: 80%;
+    }
+
+    footer .container {
+        margin: 60px 25px 50px;
+    }
+
+    footer .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer .container .row:first-child .col:nth-child(3) {
+        margin-bottom: 25px;
+    }
+
+    footer .container .col input, footer .container .col button {
+        width: 100%;
+    }
+}
+
+/* Mobile M */
+@media only screen and (max-width: 424px) {
+    #hero-section .content > p {
+        width: 85%;
+    }
+
+    #subscribe-section .row .col:nth-child(2) {
+        width: 85%;
+    }
+
+    #subscribe-section .content {
+        margin: 60px auto;
+    }
+}
+
+/* Mobile S */
+@media only screen and (max-width: 374px) {
+    #download-section .content .button a {
+        display: flex;
+    }
+}
