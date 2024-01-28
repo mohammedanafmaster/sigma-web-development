@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: aqua;
+            height: 75vh;
+            width: 75vw;
+            position: relative;
+        }
+
+        .circle {
+            background-color: red;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            bottom: 25%;
+            left: 0;
+            animation: moveForward 15s linear 1s infinite paused, moveUpwards 15s ease-in 1s infinite paused;
+        }
+
+        @keyframes moveForward {
+            0% {
+                left: 0%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        @keyframes moveUpwards {
+            0% {
+                bottom: 25%;
+            }
+
+            10% {
+                bottom: 0%;
+            }
+
+            20% {
+                bottom: 25%;
+            }
+
+            30% {
+                bottom: 0%;
+            }
+
+            40% {
+                bottom: 25%;
+            }
+
+            50% {
+                bottom: 0%;
+            }
+
+            60% {
+                bottom: 25%;
+            }
+
+            70% {
+                bottom: 0%;
+            }
+
+            80% {
+                bottom: 25%;
+            }
+
+            90% {
+                bottom: 0%;
+            }
+
+            100% {
+                bottom: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
