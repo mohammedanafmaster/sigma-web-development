@@ -1,0 +1,261 @@
+:root {
+  --background-color: #000;
+  --text-color: #fff;
+  --button-color: #e50914;
+  --button-hover: #f40612;
+  --button-active: #bb0a12;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: local("Netflix Sans"),
+    url("../fonts/NetflixSans-Regular.otf") format("opentype"),
+    url("../fonts/NetflixSans-Regular.woff2") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url("../images/background-image.png") center fixed no-repeat;
+  background-size: 100% 115%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Netflix Sans", sans-serif;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-container > select,
+footer > select {
+  background-color: var(--background-color);
+  border: 1px solid var(--text-color);
+  border-radius: 0.2rem;
+  color: var(--text-color);
+  margin: 0 1rem;
+  padding: 0.4rem 0.25rem;
+  text-align: center;
+}
+
+.nav-container > select:focus,
+footer > select:focus {
+  box-shadow: 0 0 0 2px var(--text-color);
+}
+
+.nav-container > button {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border: 0;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.2rem;
+}
+
+.nav-container > button:hover {
+  background-color: var(--button-hover);
+  cursor: pointer;
+}
+
+.nav-container > button:active {
+  background-color: var(--button-active);
+}
+
+#home-section {
+  border-bottom: 5px solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+#home-section > h1 {
+  font-size: 64px;
+  line-height: 70.4px;
+  letter-spacing: -0.5;
+  width: 50%;
+  text-align: center;
+}
+
+#home-section > h3 {
+  font-size: 26px;
+  font-weight: lighter;
+  margin: 0.8rem 0;
+}
+
+#home-section > p,
+#faq-section p {
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  margin: 1rem 0;
+}
+
+#home-section > .home-container,
+#faq-section > .faq-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#home-section > .home-container > input,
+#faq-section > .faq-container > input {
+  padding: 1rem 0.5rem;
+  width: 32.5rem;
+  font-size: 16px;
+}
+
+#home-section > .home-container > input::placeholder,
+#faq-section > .faq-container > input::placeholder {
+  color: #8c8c8c;
+  font-size: 16px;
+}
+
+#home-section > .home-container > button,
+#faq-section > .faq-container > button {
+  background-color: var(--button-color);
+  border: none;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 0.9rem 1.25rem;
+}
+
+#home-section > .home-container > button:hover,
+#faq-section > .faq-container > button:hover {
+  background-color: var(--button-hover);
+  cursor: pointer;
+}
+
+#home-section > .home-container > button:active,
+#faq-section > .faq-container > button:active {
+  background-color: var(--button-active);
+}
+
+#tv-section,
+#offline-section,
+#cross-platform-section,
+#kids-section,
+#faq-section {
+  background-color: var(--background-color);
+  border-bottom: 5px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 14rem;
+}
+
+#tv-section > .tv-content > h2,
+#offline-section > .offline-content > h2,
+#cross-platform-section > .cross-platform-content > h2,
+#kids-section > .kids-content > h2,
+#faq-section > h2 {
+  font-size: 50px;
+  line-height: 55px;
+}
+
+#tv-section > .tv-content > p,
+#offline-section > .offline-content > p,
+#cross-platform-section > .cross-platform-content > p,
+#kids-section > .kids-content > p {
+  font-size: 26px;
+  max-width: 75%;
+  margin: 1.25rem 0;
+}
+
+#offline-section > .offline-content,
+#kids-section > .kids-content {
+  margin-left: 7.5rem;
+}
+
+#faq-section {
+  flex-direction: column;
+}
+
+#faq-section > h2 {
+  margin-bottom: 3rem;
+}
+
+#faq-section > details {
+  background-color: #303030;
+  font-size: 26px;
+  cursor: pointer;
+  width: 75%;
+  margin-bottom: 0.5rem;
+  padding: 1.25rem 2rem;
+  position: relative;
+}
+
+#faq-section > details > summary {
+  list-style: none;
+}
+
+#faq-section > details::after {
+  content: "";
+  background-image: url("../images/plus-icon.png");
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 22.5px;
+  top: 22.5px;
+  transition: all 0.5s ease;
+}
+
+#faq-section > details[open]::after {
+  transform: rotate(45deg);
+}
+
+#faq-section > p {
+  margin-top: 3rem;
+}
+
+footer {
+  background-color: var(--background-color);
+  color: #757575;
+  font-size: 16px;
+  padding: 3rem 14rem 1rem;
+}
+
+footer > p {
+  margin: 1rem 0 2rem;
+}
+
+footer a {
+  color: #757575;
+  font-size: 13px;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+footer > .container a {
+  display: block;
+}
+
+footer .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer > select {
+  border-color: #757575;
+  color: #999;
+  font-size: 16px;
+  margin: 1rem 0;
+  padding: 0.75rem 0.3rem 0.75rem 1.5rem;
+}
+
+footer > p:last-child {
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
