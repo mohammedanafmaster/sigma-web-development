@@ -1,0 +1,356 @@
+/* Laptop */
+@media only screen and (max-width: 1439px) {
+  nav > .logo > img {
+    width: 135px;
+  }
+
+  #home-section > h1 {
+    font-size: 48px;
+    width: 75%;
+    letter-spacing: 0;
+  }
+
+  #home-section > h3 {
+    font-size: 24px;
+    margin: 0.6rem 0;
+  }
+
+  #home-section > p,
+  #faq-section p {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin: 0.8rem 0;
+  }
+
+  #home-section > .home-container > input,
+  #faq-section > .faq-container > input {
+    width: 25rem;
+  }
+
+  #home-section > .home-container > button,
+  #faq-section > .faq-container > button {
+    padding: 0.85rem 1.5rem;
+  }
+
+  #tv-section,
+  #offline-section,
+  #cross-platform-section,
+  #kids-section,
+  #faq-section {
+    padding: 4rem 2rem;
+  }
+
+  #tv-section > .tv-content > p,
+  #offline-section > .offline-content > p,
+  #cross-platform-section > .cross-platform-content > p,
+  #kids-section > .kids-content > p {
+    max-width: 100%;
+  }
+
+  #offline-section > .offline-content,
+  #kids-section > .kids-content {
+    margin-left: 3rem;
+  }
+
+  #faq-section > details {
+    width: 100%;
+  }
+
+  #faq-section > p {
+    margin-top: 3rem;
+  }
+
+  footer {
+    padding: 3rem 2rem 1rem;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1023px) {
+  nav > .logo > img {
+    width: 100px;
+  }
+
+  #home-section > h1 {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  #home-section > h3 {
+    font-size: 18px;
+    margin: 0.4rem 0;
+  }
+
+  #home-section > p,
+  #faq-section > p {
+    font-size: 18px;
+    margin: 1rem 0;
+  }
+
+  #tv-section,
+  #offline-section,
+  #cross-platform-section,
+  #kids-section,
+  #faq-section {
+    flex-wrap: wrap;
+  }
+
+  #tv-section > .tv-content,
+  #offline-section > .offline-content,
+  #cross-platform-section > .cross-platform-content,
+  #kids-section > .kids-content,
+  #faq-section > .faq-content {
+    text-align: center;
+  }
+
+  #tv-section > .tv-content > h2,
+  #offline-section > .offline-content > h2,
+  #cross-platform-section > .cross-platform-content > h2,
+  #kids-section > .kids-content > h2,
+  #faq-section > h2 {
+    font-size: 32px;
+  }
+
+  #tv-section > .tv-content > p,
+  #offline-section > .offline-content > p,
+  #cross-platform-section > .cross-platform-content > p,
+  #kids-section > .kids-content > p {
+    font-size: 18px;
+    margin: 0.5rem 0;
+  }
+
+  #tv-section > .tv-display > img,
+  #cross-platform-section > .cross-platform-display > img {
+    width: 650px;
+  }
+
+  #tv-section > .tv-display > video {
+    width: 650px;
+    right: 60px;
+    top: 110px;
+  }
+
+  #offline-section > .offline-display > img,
+  #kids-section > .kids-display > img {
+    width: 600px;
+    margin-bottom: 2rem;
+  }
+
+  #cross-platform-section > .cross-platform-display > video {
+    width: 400px;
+    right: 125px;
+    top: 40px;
+  }
+
+  #faq-section > h2 {
+    margin-bottom: 1rem;
+  }
+
+  #faq-section > details {
+    font-size: 18px;
+  }
+
+  #faq-section > details::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  #faq-section > p {
+    margin-top: 2.5rem;
+  }
+
+  footer .row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile L */
+@media only screen and (max-width: 767px) {
+  nav > .logo > img {
+    width: 90px;
+  }
+
+  #home-section > h1 {
+    line-height: 40px;
+    margin: 0.75rem 0 0.5rem;
+    width: 75%;
+  }
+
+  #home-section > p,
+  #faq-section > p {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    width: 75%;
+  }
+
+  #home-section > .home-container > input,
+  #faq-section > .faq-container > input {
+    width: 22.5rem;
+  }
+
+  #home-section > .home-container > button,
+  #faq-section > .faq-container > button {
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+  }
+
+  #home-section > .home-container > input,
+  #home-section > .home-container > button,
+  #faq-section > .faq-container > input,
+  #faq-section > .faq-container > button {
+    margin: 0.5rem auto;
+  }
+
+  #tv-section,
+  #offline-section,
+  #cross-platform-section,
+  #kids-section,
+  #faq-section {
+    padding: 2.5rem 2rem;
+  }
+
+  #tv-section > .tv-display > img,
+  #cross-platform-section > .cross-platform-display > img {
+    width: 350px;
+  }
+
+  #tv-section > .tv-display > video {
+    width: 375px;
+    top: 75px;
+    zoom: 0.7;
+  }
+
+  #offline-section > .offline-content,
+  #kids-section > .kids-content {
+    margin-left: 0;
+  }
+
+  #offline-section > .offline-content > h2,
+  #kids-section > .kids-content > h2 {
+    line-height: 40px;
+  }
+
+  #offline-section > .offline-display > img,
+  #kids-section > .kids-display > img {
+    width: 375px;
+  }
+
+  #cross-platform-section > .cross-platform-display > video {
+    width: 220px;
+    right: 65px;
+    top: 20px;
+  }
+
+  #faq-section > h2 {
+    text-align: center;
+    line-height: 40px;
+  }
+
+  #faq-section > details {
+    font-size: 18px;
+  }
+
+  #faq-section > details::after {
+    width: 15px;
+    height: 15px;
+  }
+
+  #faq-section p {
+    font-size: 18px;
+  }
+
+  footer .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile M */
+@media only screen and (max-width: 424px) {
+  #home-section > p,
+  #faq-section > p {
+    width: 95%;
+  }
+
+  #home-section > .home-container > input,
+  #faq-section > .faq-container > input {
+    width: 85%;
+  }
+
+  #tv-section > .tv-display > img,
+  #cross-platform-section > .cross-platform-display > img {
+    width: 300px;
+  }
+
+  #tv-section > .tv-display > video {
+    width: 325px;
+    top: 60px;
+  }
+
+  #cross-platform-section > .cross-platform-display > video {
+    width: 180px;
+  }
+
+  #faq-section > details {
+    padding: 1rem 1.25rem;
+  }
+
+  footer .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Mobile S */
+@media only screen and (max-width: 374px) {
+  header > nav {
+    padding: 1rem 1.5rem;
+  }
+
+  nav > .logo > img {
+    width: 85px;
+  }
+
+  #home-section > h1 {
+    width: 85%;
+  }
+
+  #home-section > p, #faq-section > p {
+    line-height: 25px;
+  }
+
+  #tv-section > .tv-display > img,
+  #cross-platform-section > .cross-platform-display > img {
+    width: 275px;
+  }
+
+  #tv-section > .tv-display > video {
+    right: 15px;
+  }
+
+  #offline-section > .offline-display > img,
+  #kids-section > .kids-display > img {
+    width: 320px;
+  }
+
+  #cross-platform-section > .cross-platform-content > h2 {
+    line-height: 40px;
+  }
+
+  #cross-platform-section > .cross-platform-content > p {
+    margin-bottom: 1rem;
+  }
+
+  #cross-platform-section > .cross-platform-display > video {
+    width: 170px;
+    right: 55px;
+    top: 15px;
+  }
+
+  #faq-section > details {
+    padding: 1rem;
+  }
+
+  #faq-section > .faq-container > input {
+    width: 100%;
+  }
+}
