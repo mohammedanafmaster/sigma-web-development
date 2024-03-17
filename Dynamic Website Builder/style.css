@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  margin: 1.5rem 2rem;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.card:hover {
+  background-color: #333231;
+  cursor: pointer;
+}
+
+.left {
+  position: relative;
+}
+
+.thumbnail {
+  border-radius: 10px;
+  width: 10rem;
+}
+
+.duration {
+  background-color: #333231;
+  border-radius: 5px;
+  padding: 0.1rem 0.25rem;
+  position: absolute;
+  bottom: 7.5px;
+  right: 5px;
+}
+
+.content {
+  margin-top: 1rem;
+}
+
+.bullet {
+  margin: 0 5px;
+}
